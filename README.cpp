@@ -1,6 +1,18 @@
 //calculadora com switch case
 #include <iostream>
 using namespace std;
+float somar(float a, float b){
+    return a+b;
+}
+float multiplicar(float a, float b){
+    return a-b;
+}
+float subtrair(float a, float b){
+    return a-b;
+}
+float divisao(float a, float b){
+    return a/b;
+}
 
 int main(){
     float n1,n2;
@@ -12,17 +24,17 @@ int main(){
             case 1:
                 cout << "Digite os dois numeros: ";
                 cin >> n1 >> n2;
-                cout << "Resultado: " << n1+n2 << endl;
+                cout << "Resultado: " << somar(n1, n2) << endl;
                 break;
             case 2:
                 cout << "Digite os dois numeros: ";
                 cin >> n1 >> n2;
-                cout << "Resultado: " << n1*n2 << endl;
+                cout << "Resultado: " << multiplicar(n1, n2) << endl;
                 break;
             case 3:
                 cout << "Digite os dois numeros: ";
                 cin >> n1 >> n2;
-                cout << "Resultado: " << n1-n2 << endl;
+                cout << "Resultado: " << subtrair(n1, n2) << endl;
                 break;
             case 4:
                 cout << "Digite os dois numeros: ";
@@ -30,7 +42,7 @@ int main(){
                 if(n2==0){
                     cout << "Erro: Nao e possivel dividir por zero!" << endl;
                 }else{
-                    cout << "Resultado da Divisao: " << n1/n2 << endl;
+                    cout << "Resultado da Divisao: " << divisao(n1, n2) << endl;
                 }
                 break;
             case 0:
